@@ -8,7 +8,7 @@ jobs:
           sudo apt update
           sudo apt install -y build-essential
           sudo apt install -y g++-10
-          sudo ln -s $(which g++-10) /usr/local/g++
+          sudo ln -s $(which g++-10) /usr/local/bin/g++
       - uses: actions/checkout@v2
       - name: test
         run: |
